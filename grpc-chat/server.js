@@ -55,6 +55,6 @@ server.addService(protoDescriptor.ChatService.service, {
 });
 
 server.bind(SERVER_URI, grpc.ServerCredentials.createInsecure());
-
+console.log(usersInChat, "usersInChat")
 server.start();
 console.log("Server is running!");
